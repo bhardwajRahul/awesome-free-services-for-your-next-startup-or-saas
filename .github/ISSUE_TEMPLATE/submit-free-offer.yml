@@ -1,0 +1,63 @@
+body:
+  - attributes:
+      value: |
+        ## ⚠️ Important: We Only Curate FREE Services / NOT Products
+        e.g., free consultations, free audits, free MVP builds. We do **NOT** include:
+        - Free trials or freemium products
+        - Free plans of software tools
+        - Discounts or coupons
+
+        If your submission involves a product with a free plan, it will be rejected. We focus on **human-powered services offered for free**.
+    type: markdown
+  - attributes:
+      description: "A clear, concise title for the free service (e.g., 'I'll audit your landing page for free')"
+      label: "Service Title"
+      placeholder: "e.g., Free UX review for 5 SaaS founders"
+    id: service-title
+    type: input
+    validations:
+      required: true
+  - attributes:
+      description: "Describe what you're offering. What will the founder receive? How does it work?"
+      label: "Service Description"
+      placeholder: "I'm offering to review 3 landing pages this week and provide a detailed Loom video with actionable feedback..."
+    id: service-description
+    type: textarea
+    validations:
+      required: true
+  - attributes:
+      description: "Link to where this offer was posted (Reddit, Twitter, LinkedIn, your blog, etc.)"
+      label: "Original Offer URL"
+      placeholder: "https://reddit.com/r/SaaS/..."
+    id: offer-url
+    type: input
+    validations:
+      required: true
+  - attributes:
+      description: "When was this offer originally posted?"
+      label: "Date Posted"
+      placeholder: "Feb 14 2026 11:15 PM"
+    id: post-date
+    type: input
+    validations:
+      required: true
+  - attributes:
+      description: "Does this offer expire? How many spots are available?"
+      label: "Expiration / Spots Available"
+      placeholder: "e.g., 3 spots left / Ends March 1st / First come first served"
+    id: expiration
+    type: input
+  - attributes:
+      description: "Please confirm the following:"
+      label: "Confirmation"
+      options:
+        - label: "I confirm this is a **completely free service** (not a free trial, not a freemium product, not a discount)"
+          required: true
+        - label: "I understand that submissions promoting free or paid products and paid services will be rejected"
+          required: true
+    id: confirmation
+    type: checkboxes
+description: "Know a great free service for startups? Submit it to be included in our weekly list!"
+labels: ["submission", "pending-review"]
+name: "\U0001F4E2 Submit a Free Service Offer"
+title: "[FREE SERVICE] "
