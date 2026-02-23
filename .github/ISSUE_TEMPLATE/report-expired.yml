@@ -1,0 +1,53 @@
+body:
+  - attributes:
+      value: "## \U0001F50E Help us keep the list accurate!\nIf you've come across one that's no longer valid, please fill out the form below so we can take action quickly. Thank you!\n"
+    type: markdown
+  - attributes:
+      description: The title or description of the offer as it appears in the list
+      label: Offer Title
+      placeholder: "e.g. Free landing page review for SaaS founders"
+    id: offer-title
+    type: input
+    validations:
+      required: true
+  - attributes:
+      description: The URL of the offer listed in the repo
+      label: Offer URL
+      placeholder: "https://..."
+    id: offer-url
+    type: input
+    validations:
+      required: true
+  - attributes:
+      label: What's the issue?
+      options:
+        - Offer has expired / is no longer available
+        - Spots are full (capacity reached)
+        - Link is broken / returns 404
+        - Offer author has deleted the post
+        - Offer turned out not to be free
+        - Offer is a product, not a service
+        - Duplicate entry already in the list
+        - Moderator removed the post
+        - Other
+    id: issue-type
+    type: dropdown
+    validations:
+      required: true
+  - attributes:
+      description: Any extra details that would help us verify or action this report
+      label: Additional Context
+      placeholder: "e.g. The Reddit post was deleted, or the author replied saying all spots are filled."
+    id: additional-context
+    type: textarea
+  - attributes:
+      label: Pre-submission Checklist
+      options:
+        - label: I have checked the URL myself and confirmed the issue
+          required: true
+    id: checklist
+    type: checkboxes
+description: Found an offer in the list that is expired, no longer available, or has a broken link? Let us know so we can remove or update it.
+labels: ["expired offer", "needs removal"]
+name: ⚠️ Report an Expired or Broken Offer
+title: "[EXPIRED] "
