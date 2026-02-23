@@ -1,0 +1,49 @@
+body:
+  - attributes:
+      value: |
+        ## Help us make this list better!
+        We're always looking for ways to improve how we curate and present free services for startup founders.
+    type: markdown
+  - attributes:
+      description: "Is something missing? Is the list hard to navigate? Are you looking for a specific type of service?"
+      label: "What problem are you trying to solve?"
+      placeholder: "I wish I could filter services by category more easily..."
+    id: problem
+    type: textarea
+    validations:
+      required: true
+  - attributes:
+      description: "What would make this repository better for you?"
+      label: "Describe your ideal solution"
+      placeholder: "Add tags/categories to each listing so founders can quickly find design help vs. marketing help"
+    id: solution
+    type: textarea
+    validations:
+      required: true
+  - attributes:
+      description: "Have you seen this done well elsewhere?"
+      label: "Alternatives you've considered"
+      placeholder: "Other awesome lists use emoji tags like \U0001F3A8 for design, \U0001F4C8 for marketing"
+    id: alternatives
+    type: textarea
+  - attributes:
+      label: "How important is this to you?"
+      options:
+        - "\U0001F525 Critical - This would make the list much more useful"
+        - "\U0001F44D Nice to have - Would be a good improvement"
+        - "\U0001F937 Just an idea - Take it or leave it"
+    id: priority
+    type: dropdown
+    validations:
+      required: true
+  - attributes:
+      label: "Confirmation"
+      options:
+        - label: "I've checked that this feature hasn't already been requested"
+          required: true
+    id: terms
+    type: checkboxes
+description: "Suggest an improvement or new feature for this repository"
+labels: ["enhancement", "discussion"]
+name: "\U0001F4A1 Feature Request / Improvement Idea"
+title: "[IDEA] "
